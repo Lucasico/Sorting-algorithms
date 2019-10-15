@@ -6,6 +6,9 @@ package vetores;
  */
 public class Mergesort {
     
+    // Mescla duas sub-matrizes de arr [].
+    // O primeiro subarray é arr [l..m]
+    // O segundo subarray é arr [m + 1..r]
    
     void merge(int vetor[], int esquerdo, int meio, int direito) 
     { 
@@ -16,6 +19,7 @@ public class Mergesort {
         int L[] = new int [n1]; 
         int R[] = new int [n2]; 
       
+         // Copiar dados para arrays temporárias 
         for (int i=0; i<n1; ++i) 
             L[i] = vetor[esquerdo + i]; 
         for (int j=0; j<n2; ++j) 
@@ -23,6 +27,7 @@ public class Mergesort {
        
         int i = 0, j = 0; 
         
+        // Índice inicial do array de sub-base mesclada
         int k = esquerdo; 
         while (i < n1 && j < n2) 
         { 
@@ -54,6 +59,8 @@ public class Mergesort {
         } 
     }
      
+    // Função principal que classifica arr [l..r] usando
+    // mesclar ()
     void sort(int vetor[], int esquerdo, int direito) 
     { 
         if (esquerdo < direito) 
