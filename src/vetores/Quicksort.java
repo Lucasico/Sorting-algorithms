@@ -5,7 +5,15 @@ package vetores;
  * @author lucas
  */
 public class Quicksort {
-    
+   /*
+       Esta função aceita o último elemento como pivô,
+       coloca o elemento pivô no seu correto
+       posição no array classificada e coloca todos
+       menor (menor que o pivô) à esquerda do
+       pivô e todos os elementos maiores para a direita
+       do pivô 
+     
+    */
     int partition(int vetor[], int inicio, int fim) 
     { 
         int pivot = vetor[fim];  
@@ -34,9 +42,12 @@ public class Quicksort {
     { 
         if (inicio < fim) 
         { 
-            
+             /* pi is partitioning index, arr[pi] is  
+              now at right place */
             int pi = partition(vetor, inicio, fim); 
   
+            // Classifica recursivamente os elementos antes
+            // partição e depois da partição
             sort(vetor, inicio, pi-1); 
             sort(vetor, pi+1, fim); 
         } 
