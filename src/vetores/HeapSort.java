@@ -9,19 +9,20 @@ public class HeapSort {
     { 
         int n = vetor.length; 
   
-        
+        // Montar heap (reorganizar matriz)
         for (int i = n / 2 - 1; i >= 0; i--) 
             heapify(vetor, n, i); 
   
-       
+       // Um ​​por um extrai um elemento do heap
         for (int i=n-1; i>=0; i--) 
         { 
-            
+            // Move a raiz atual para o final
             int temp = vetor[0]; 
             vetor[0] = vetor[i]; 
             vetor[i] = temp; 
   
            
+            // chama max heapify na pilha reduzida
             heapify(vetor, i, 0); 
         } 
     } 
