@@ -7,10 +7,10 @@ import java.util.Random;
 
 public class Vetores {
 
-    private int vetCrescente[] = new int[1000];
-    private int vetDescrescente[] = new int[1000];
-    private int vetRandomico[] = new int[1000];
-    private int vetElementIguais[] = new int[1000];
+    private int vetCrescente[] = new int[10000];
+    private int vetDescrescente[] = new int[10000];
+    private int vetRandomico[] = new int[10000];
+    private int vetElementIguais[] = new int[10000];
 
     Random gerador = new Random();
 
