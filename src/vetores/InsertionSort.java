@@ -26,7 +26,7 @@ public class InsertionSort{
      final long posOrdenacao = System.nanoTime();
      final long diferencaTime = (posOrdenacao - antesDaOrdenacao);
      
-     System.out.println(" --------- Tempos de execução do INSERTIONSORT---------");
+     System.out.println(" --------- Tempos de execução da ordenação do INSERTIONSORT---------");
      System.out.println("> Tempo em nanosegundos antes da ordenação = " + antesDaOrdenacao);
      System.out.println("> Tempo em nanosegundos após a ordenação = " + posOrdenacao);
      System.out.println("> Tempo de diferença entre Time final e Time inicial = " + diferencaTime);
