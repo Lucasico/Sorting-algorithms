@@ -11,7 +11,7 @@ public class Quicksort {
        posição no array classificada e coloca todos
        menor (menor que o pivô) à esquerda do
        pivô e todos os elementos maiores para a direita
-       do pivô 
+       do pivô que é o elemento central
      
     */
     int partition(int vetor[], int inicio, int fim) 
