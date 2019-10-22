@@ -1,10 +1,13 @@
 
 package vetores;
+
+import CalculoTime.CalcTime;
+
 /**
  *
  * @author lucas
  */
-public class Mergesort {
+public class Mergesort extends CalcTime{
     
     // Mescla duas sub-matrizes de arr [].
     // O primeiro subarray é arr [l..m]
@@ -74,17 +77,7 @@ public class Mergesort {
             merge(vetor, esquerdo, meio, direito); 
         } 
     }
-    void temposExecucao(long antesDaOrdenacao, long finalDaOrdenacao){
-        
-        final long diferencaTime = (finalDaOrdenacao - antesDaOrdenacao);
-     
-        System.out.println(" --------- Tempos de execução do MERGESORT---------");
-        System.out.println("> Tempo em nanosegundos antes da ordenação = " + antesDaOrdenacao);
-        System.out.println("> Tempo em nanosegundos após a ordenação = " + finalDaOrdenacao);
-        System.out.println("> Tempo de diferença entre Time final e Time inicial = " + diferencaTime);
-        System.out.println("OBS.: algoritmo preparado para ordenar na forma crescente");
-        System.out.println("");
-                
-    }
-    
+    public void temposExecucao(long antesDaOrdenacao, long finalDaOrdenacao) {
+        super.temposExecucao(antesDaOrdenacao, finalDaOrdenacao); //To change body of generated methods, choose Tools | Templates.
+    }    
 }

@@ -23,7 +23,7 @@ public class SortingAlgorithms {
         opcaoOrdenacao = teclado.nextInt();
         
         System.out.println("---------------------------------------------------------------------------------------");
-        System.out.println("\nOs vetores abaixo ordenados, são ambos de 1000 posições\n");
+        System.out.println("\nOs vetores abaixo ordenados, são ambos de 10000 posições\n");
         
         switch(opcaoOrdenacao){
             case 1:

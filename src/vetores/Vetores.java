@@ -96,7 +96,7 @@ public class Vetores {
     }
 
     public void preenchervetDescrescente(int control) {
-        int j = 999;
+        int j = getVetDescrescente().length - 1;
         for (int i = 0; i < getVetDescrescente().length; i++) {
             this.vetDescrescente[i] = j;
             j--;
